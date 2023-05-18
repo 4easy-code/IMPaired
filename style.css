@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+body {
+	min-height: 100vh;
+	background: linear-gradient(#fff);
+	overflow-x: hidden;
+}
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+}
+
+.logo {
+	top: 0;
+	position: fixed;
+}
+
+.menu {
+	position: relative;
+	margin-left: 600px;
+}
+
+header .logo {
+	color: #ff4c68;
+	font-weight: 900;
+	text-decoration: none;
+	font-size: 2em;
+	letter-spacing: 3px;
+	line-height: 3;
+}
+header ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li {
+	list-style: none;
+	margin-left: 20px;
+}
+header ul li a {
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #ff4c68;
+	border-radius: 20px;
+	transition: all 0.3s;
+}
+
+header ul li a:hover,
+header ul li a.active {
+	color: #fff;
+	font-size: 20px;
+	background-color: #ff4c68;
+	border-radius: 20px;
+}
+
+
+section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+section::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	background: linear-gradient(to top, #e68e82, transparent);
+	z-index: 1000;
+}
+
+
+section img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+}
+
+
+
+/* chaning opacity of image */
+img {
+	opacity: 0.1;
+}
+
+
+
+
+
+
+
+
+.button-text {
+	font-size: 2px;
+}
+
+
+
+#text {
+	position: absolute;
+	right: -350px;
+	color: #ff4c68;
+	white-space: nowrap;
+	font-size: 7.5vw;
+	z-index: 9;
+}
+
+a {
+	text-decoration: none;
+	font-weight: lighter;
+	color: white;
+}
+.button-16 {
+	font-weight: lighter;
+	font-size: 2rem;
+	margin: 4px;
+	cursor: pointer;
+	padding: .1em .3em;
+	background: #ff4c68;
+	border: #dddddd;
+	border-radius: .3cm;
+	margin: 30px;
+	padding: 10px;
+	font-weight: 200;
+}
+.button-16:hover{
+	border-radius: 0.4cm;
+	color: white;
+	opacity: .9;
+}
+
+
+
+
+
+
+.contactContent {
+	text-decoration: none;
+	color: white;
+}
+/* 3 */
+.btn-3 {
+	background: #ff4c68;
+	width: 130px;
+	height: 40px;
+	line-height: 42px;
+	padding: 0;
+	border: none;
+	/* border-radius: 2px; */
+  }
+.btn-3:hover {
+	background: #ff4c78;
+	font-size: 1.1rem;
+	/* border-radius: 2px; */
+	width: 140px;
+	height: 50px;
+}
+
+  .btn-3:before,
+  .btn-3:after {
+	position: absolute;
+	content: "";
+	right: 0;
+	top: 0;
+	 background: #ff4c68;
+	transition: all 0.3s ease;
+  }
+  .btn-3:before {
+	height: 0%;
+	width: 7px;
+  }
+  .btn-3:after {
+	width: 0%;
+	height: 8px;
+  }
+  .btn-3:hover{
+	 /* background: transparent; */
+	box-shadow: none;
+  }
+  .btn-3:hover:before {
+	height: 100%;
+  }
+  .btn-3:hover:after {
+	width: 100%;
+  }
+
+
+
+
+
+.sec {
+	position: relative;
+	padding: 100px;
+	background: #1c0522;
+}
+.sec h2 {
+	font-size: 3.5em;
+	margin-bottom: 10px;
+	color: pink;
+}
+.sec p {
+	font-size: 1em;
+	margin-bottom: 10px;
+	color: pink;
+}
+#About {
+  font-family: 'Poppins', sans-serif;
+  height :50vh
+}
+#Contact {
+  height :50vh
+}
+#Review {
+  height :20vh
+}
+#about1{
+  margin: 20px;
+}
+
+
+
+/* login signup starts */
+#SignUp{
+  --color-primary: pink;
+  --color-primary-dark: red;
+  --color-secondary: #252c6a;
+  --color-error: #cc3333;
+  --color-success: #4bb544;
+  --border-radius: 4px;
+
+
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background: whitek;
+  background-size: cover; 
+}
+
+
+
+.container{
+  width: 400px;
+  max-width: 400px;
+  margin: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  background: #ffffff;
+}
+
+/*Font property for the entire form*/
+.container, 
+.form__input,
+.form__button{
+  font: 500 1rem 'Quicksand', sans-serif;
+}
+
+/*use to display or hide the sign up and login forms*/
+.form--hidden{
+  display: none;
+}
+
+/*removing extra spacing on the top and bottom of the form cointainer*/
+.form > *:first-child {
+  margin-top: 0;
+}
+
+.form > *:last-child {
+  margin-bottom: 0;
+}
+
+.form__title{
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/*Style for error and sucess message*/
+.form__message{
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+
+.form__message--success{
+  color: var(--color-success);
+}
+.form__message--error{
+color: var(--color-error);
+}
+
+/*Input field styles*/
+.form__input-group{
+  margin-bottom: 1rem;
+}
+
+.form__input{
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border: 1px solid #dddddd;
+  outline: none;
+  background: #eeeeee;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus{
+  border-color: var(--color-primary);
+  background: #ffffff;
+}
+
+.form__input--error{
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.form__input-error-message{
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-error);
+}
+
+/*Button style*/
+.form__button{
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+  cursor: pointer;
+  background: var(--color-primary);
+}
+
+.form__button:hover{
+  background: var(--color-primary-dark);
+}
+
+.form__button:active{
+  transform: scale(0.98);
+}
+
+.form__text{
+  text-align: center;
+}
+
+.form__link{
+  color: var(--color-secondary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form__link:hover{
+  text-decoration: underline;
+}
+
+/* login signup ends */
+
+
+#footer {
+    color: #8f8f8f;
+    text-align: center;
+}
+
+.footer-icons {
+    padding: 10% 1% 0.8%;
+    color: #000;
+}
+
+.footer-text {
+    padding: 0 0 3%;
+}
